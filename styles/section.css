@@ -1,0 +1,93 @@
+section {
+    .content {
+        width: 80rem;
+        max-height: 50rem;
+        height: 50rem;
+
+        .back-btn {
+            border: none;
+            background: transparent;
+            color: var(--color-brand);
+        }
+        
+        .back-btn:hover {
+            color: var(--color-brand-hover);
+        }
+
+        h1 {
+            color: var(--content-primary);
+            margin-top: 1.2rem;
+            margin-bottom: 4rem;
+        }
+
+        .form {
+            gap: 1.6rem;
+
+            #input-task-value {
+                padding: 1.2rem;
+                border: var(--border-primary);
+                outline: none;
+                border-radius: 1.2rem;
+                width: 78%;
+                font-size: 1.6rem;
+            }
+    
+            #input-task-value:hover {
+                border: var(--border-hover);
+            }
+
+            #input-task-value:placeholder-shown {
+                color: var(--content-tertiary);
+            }
+    
+            button {
+                border: none;
+                background-color: var(--color-brand);
+                border-radius: 1.2rem;
+                width: 22%;
+                color: var(--always-white);
+                cursor: pointer;
+                font-size: 1.6rem;
+            }
+
+            button:hover {
+                background-color: var(--color-brand-hover);
+            }
+        }
+
+        #list-cards {
+            max-height: 52.5rem;
+            margin-top: 2rem;
+            flex-direction: column;
+            gap: 1.2rem;
+            overflow: auto;
+
+            .card {
+                width: 100%;
+                border-radius: 1.2rem;
+                background-color: var(--background-secondary);
+                padding: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .description {
+                    width: 100%;
+
+                    p {
+                        padding: 0.7rem;
+                        color: var(--content-secondary);
+                    }
+                }
+
+                .btn-delete-task {
+                    color: var(--content-tertiary);
+                }
+
+                .btn-delete-task:hover {
+                    color: #ff0000;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+#error-local {
+    position: fixed;
+    top: 18px;
+    right: 20px;
+
+    .mensagem-info {
+        justify-content: space-between;
+        border-radius: 1.2rem;
+        color: var(--always-white);
+        padding: 0.9rem;
+        gap: 0.8rem;
+        animation-name: hidden;
+        animation-duration: 5s;
+
+        .description {
+            width: 100%;
+        }
+    
+        svg {
+            color: var(--always-white);
+        }
+    }
+}
+
+@keyframes hidden {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    100% {opacity: 0;}
+}

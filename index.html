@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Lista de compras</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="flex align-center justify-center">
+        <img src="images/logo/logo.png" alt="">
+    </header>
+    <section class="flex align-center justify-center w-100 h-100">
+        <div class="content">
+            <button class="back-btn flex align-center">
+                <i data-lucide="arrow-left"></i>
+                Voltar
+            </button>
+            <h1>Compras da semana</h1>
+            <div class="form flex">
+                <input id="input-task-value" type="text" placeholder="Adicione um novo item">
+                <button id="btn-add-task">Adicionar item</button>
+            </div>
+            <div id="list-cards" class="flex">
+            
+            </div>
+        </div>
+    </section>  
+    </div>
+
+    <div id="error-local"></div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
