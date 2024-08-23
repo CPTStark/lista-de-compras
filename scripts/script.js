@@ -55,15 +55,13 @@ btnAddTask.addEventListener('click', () => {
 
     const listCards = document.getElementById('list-cards')
 
-    
-
     if(inputValue == '') {
-        mensagemInformacao("Preencha o campo de descrição", 'error', 1000);
+        mensagemInformacao("Preencha o campo para adicionar um novo item!", 'error', 1000);
     } else {
         listCards.innerHTML += `
         <div class="card flex">
             <div>
-                <input class="flex align-center" type="checkbox">
+                <input class="input-checkbox flex align-center" type="checkbox">
             </div>
             <div class="description">
                 <p>${inputValue}</p>
@@ -84,7 +82,7 @@ btnAddTask.addEventListener('click', () => {
             const card = btn.closest('.card');
             card.remove();
 
-            mensagemInformacao('Tarefa deletada com sucesso!', 'success')
+            mensagemInformacao('Item deletado com sucesso!', 'success')
         });
     });    
 });
